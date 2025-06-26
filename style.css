@@ -8,18 +8,18 @@
 html, body {
   font-family: 'Poppins', sans-serif;
   height: 100%;
-  color: #ffffff;
-  background: linear-gradient(to bottom right, #5e60ce, #7400b8);
+  background: #FEF3E2;
+  color: #2c2c2c;
   overflow-x: hidden;
 }
 
 a {
-  color: #ffd6ff;
+  color: #FA812F;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffffff;
+  color: #F3C623;
 }
 
 /* Particle Background */
@@ -32,16 +32,15 @@ a:hover {
   z-index: -1;
 }
 
-
 /* Glassmorphism Container */
 .glass-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 15px;
   padding: 2rem;
   margin: 1rem auto;
   max-width: 1000px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
 
 /* Header */
@@ -52,17 +51,19 @@ header {
 
 header h1 {
   font-size: 2.5rem;
+  color: #FA812F;
 }
 
 header p {
   font-size: 1.2rem;
   margin: 0.5rem 0 1.5rem;
-  color: #fceaff;
+  color: #5e5e5e;
 }
 
 .social-icons a {
   font-size: 1.4rem;
   margin: 0 0.5rem;
+  color: #FFB22C;
 }
 
 nav ul {
@@ -77,14 +78,15 @@ nav ul {
 nav a {
   font-weight: 600;
   font-size: 1rem;
+  color: #FA812F;
 }
 
 /* Section Headings */
 section h2 {
   font-size: 2rem;
   margin-bottom: 1.2rem;
-  color: #ffddff;
-  border-bottom: 2px solid #ffd6ff;
+  color: #F3C623;
+  border-bottom: 2px solid #FFB22C;
   padding-bottom: 0.3rem;
 }
 
@@ -95,39 +97,39 @@ section h2 {
 }
 
 .skill-bar {
-  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .skill-bar span {
-  display: block;
   font-weight: 600;
-  margin-bottom: 0.2rem;
+  color: #2c2c2c;
+  margin-left: 0.2rem;
 }
 
 .bar {
-  background: #ccc;
+  background: #ddd;
   border-radius: 20px;
   overflow: hidden;
   height: 20px;
-  position: relative;
+  width: 100%;
 }
 
 .fill {
   height: 100%;
-  background: linear-gradient(to right, #ff79c6, #b185f9);
+  background: linear-gradient(to right, #F3C623, #FA812F);
   border-radius: 20px;
   width: 0;
   animation: fillBar 1.5s ease-in-out forwards;
 }
 
-/* Animation */
+
 @keyframes fillBar {
   to {
     width: var(--fill-width);
   }
 }
-
-
 
 /* Project Cards */
 .project-grid {
@@ -137,26 +139,27 @@ section h2 {
 }
 
 .project-card {
-  background: rgba(0, 0, 0, 0.2);
+  background: #fff6ea;
   padding: 1rem;
   border-radius: 10px;
   transition: transform 0.2s ease, background 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .project-card:hover {
   transform: scale(1.03);
-  background: rgba(0, 0, 0, 0.4);
+  background: #ffefd3;
 }
 
 .project-card h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: #FA812F;
 }
 
 .project-card p {
   font-size: 0.95rem;
-  color: #ffeaff;
+  color: #4b4b4b;
 }
 
 /* Certificate Grid */
@@ -167,27 +170,17 @@ section h2 {
 }
 
 .certificate {
-  background: rgba(255, 255, 255, 0.1);
+  background: #fff3db;
   padding: 1rem;
   border-radius: 10px;
+  border-left: 5px solid #F3C623;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-  color: #ccc;
+  color: #777;
   font-size: 0.9rem;
-}
-
-.percent-label {
-  position: absolute;
-  right: 8px;
-  top: -22px;
-  font-size: 0.8rem;
-  color: #fff;
-  font-weight: 500;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 2px 6px;
-  border-radius: 6px;
 }
