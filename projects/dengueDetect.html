@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Early Dengue Detection</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #7f00ff, #00c6ff);
+      color: #f4f4f4;
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .project-detail-card {
+      max-width: 900px;
+      margin: 60px auto;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .project-detail-card h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffe94f;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 0.5rem;
+    }
+
+    .project-detail-card h3 {
+      color: #55f1ff;
+      margin-top: 1.5rem;
+    }
+
+    .project-detail-card ul {
+      padding-left: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .project-detail-card p {
+      margin: 0.75rem 0;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 10px 16px;
+      background-color: #ffe94f;
+      color: #2c3e50;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ffd600;
+    }
+
+    a {
+      color: #93f0ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <section class="project-detail-card">
+    <h2>Early Dengue Detection using CBC Data</h2>
+    <p>
+      This project implements a machine learning pipeline to predict early signs of dengue using Complete Blood Count (CBC) reports. The system is built in MATLAB and applies preprocessing, data balancing, and classification to deliver accurate predictions from clinical blood data.
+    </p>
+
+    <h3>📌 Key Highlights</h3>
+    <ul>
+      <li>Processed CBC report data and handled missing values with median imputation</li>
+      <li>Applied Min-Max normalization for feature scaling</li>
+      <li>Balanced dataset using custom SMOTE implementation</li>
+      <li>Trained and evaluated KNN, Random Forest, and SVM classifiers</li>
+      <li>Compared accuracy and confusion matrices for model evaluation</li>
+    </ul>
+
+    <h3>🔍 Feature Importance (Future Scope)</h3>
+    <ul>
+      <li>Supports export to Python for model explainability with <strong>LIME</strong></li>
+      <li>Potential to identify key blood metrics contributing to early-stage dengue diagnosis</li>
+    </ul>
+
+    <p><strong>Tech Stack:</strong> MATLAB, Statistics Toolbox, SMOTE, KNN, SVM, Random Forest</p>
+    <p><strong>Developed by:</strong> Ashutosh Swain (AshainX)</p>
+
+    <p><a href="https://github.com/AshainX/dengue-matlab" target="_blank">🔗 View Project on GitHub</a></p>
+
+    <a class="back-btn" href="../index.html">← Back to Portfolio</a>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="../particle.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

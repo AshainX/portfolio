@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facial Expression Recognition</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #7f00ff, #00c6ff);
+      color: #f4f4f4;
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .project-detail-card {
+      max-width: 950px;
+      margin: 60px auto;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .project-detail-card h2 {
+      font-size: 2rem;
+      color: #ffe94f;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-detail-card h3 {
+      color: #55f1ff;
+      margin-top: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-detail-card ul {
+      padding-left: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .project-detail-card li {
+      margin-bottom: 0.6rem;
+    }
+
+    .project-detail-card p {
+      margin: 0.8rem 0;
+    }
+
+    .project-detail-card strong {
+      color: #93f0ff;
+    }
+
+    a {
+      color: #93f0ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 10px 16px;
+      background-color: #ffe94f;
+      color: #2c3e50;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ffd600;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <section class="project-detail-card">
+    <h2>Facial Expression Recognition</h2>
+    <p>
+      A deep learning-based facial expression recognition system that uses a custom Convolutional Neural Network (CNN) model. It classifies human facial expressions into multiple emotion categories based on input images, built with TensorFlow and Keras.
+    </p>
+
+    <h3>📌 Features</h3>
+    <ul>
+      <li>Custom CNN architecture for efficient expression classification</li>
+      <li>Preprocessed grayscale image dataset</li>
+      <!-- <li>Supports real-time prediction with webcam/live feed integration</li> -->
+      <li>Well-documented training and evaluation pipeline in Jupyter Notebook</li>
+    </ul>
+
+    <h3>📊 Model Performance</h3>
+    <ul>
+      <li>Achieved 70.79% accuracy on validation and test datasets</li>
+      <li>Classifies emotions like Happy, Sad, Angry, Neutral, and more</li>
+    </ul>
+
+    <p><strong>Tech Stack:</strong> Python, TensorFlow, Keras, OpenCV, NumPy, Matplotlib, scikit-learn</p>
+
+    <p><a href="https://github.com/AshainX/facial-expression-recoginition" target="_blank">🔗 View Project on GitHub</a></p>
+
+    <a class="back-btn" href="../index.html">← Back to Portfolio</a>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="../particle.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

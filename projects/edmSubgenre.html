@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDM Subgenre Classification</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #7f00ff, #00c6ff);
+      color: #f4f4f4;
+    }
+
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .project-detail-card {
+      max-width: 900px;
+      margin: 60px auto;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .project-detail-card h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffe94f;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+      padding-bottom: 0.5rem;
+    }
+
+    .project-detail-card ul {
+      padding-left: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .project-detail-card li {
+      margin-bottom: 0.5rem;
+    }
+
+    .project-detail-card p {
+      margin: 0.75rem 0;
+    }
+
+    .project-detail-card strong {
+      color: #93f0ff;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 10px 16px;
+      background-color: #ffe94f;
+      color: #2c3e50;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #ffd600;
+    }
+
+    a {
+      color: #93f0ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <section class="project-detail-card">
+    <h2>EDM Subgenre Classification</h2>
+    <ul>
+      <li>Built a music genre classification model using a hybrid <strong>InceptionV3</strong> + <strong>ResNet</strong> architecture.</li>
+      <li>Curated a custom dataset of 10 EDM subgenres (e.g., Bigroom, Trance) with audio preprocessing using <strong>PyAudioAnalysis</strong> and <strong>Librosa</strong>.</li>
+      <li>Conducted performance comparison across ML models: Random Forest (74.88%), SVM (68.26%), and Logistic Regression (66.20%).</li>
+      <li>Achieved highest accuracy of <strong>81%</strong> with a custom CNN, outperforming traditional ML models.</li>
+    </ul>
+    <p><strong>Tools Used:</strong> Python, TensorFlow, Librosa, PyAudioAnalysis, Scikit-learn</p>
+    <p><a href="https://github.com/AshainX/edm-subgenre-classification" target="_blank">🔗 View Project on GitHub</a></p>
+
+    <a class="back-btn" href="../index.html">← Back to Portfolio</a>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="../particle.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
