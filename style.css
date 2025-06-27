@@ -132,6 +132,7 @@ section h2 {
 }
 
 /* Project Cards */
+/* Project Cards */
 .project-grid {
   display: grid;
   gap: 1.5rem;
@@ -139,6 +140,10 @@ section h2 {
 }
 
 .project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
   background: #fff6ea;
   padding: 1rem;
   border-radius: 10px;
@@ -162,6 +167,8 @@ section h2 {
   color: #4b4b4b;
 }
 
+
+
 /* Certificate Grid */
 .grid {
   display: grid;
@@ -169,12 +176,34 @@ section h2 {
   gap: 1rem;
 }
 
-.certificate {
+.certificate-card {
+  display: block;
   background: #fff3db;
   padding: 1rem;
   border-radius: 10px;
   border-left: 5px solid #F3C623;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
+
+.certificate-card:hover {
+  transform: scale(1.03);
+  background: #ffefd3;
+}
+
+.certificate-card h3 {
+  font-size: 1.1rem;
+  color: #FA812F;
+  margin-bottom: 0.5rem;
+}
+
+.certificate-card p {
+  font-size: 0.95rem;
+  color: #4b4b4b;
+}
+
 
 /* Footer */
 footer {
