@@ -11,6 +11,7 @@ html, body {
   background: #FEF3E2;
   color: #2c2c2c;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -212,4 +213,15 @@ footer {
   margin-top: 2rem;
   color: #777;
   font-size: 0.9rem;
+}
+
+
+/* Smooth fade animation */
+.fade-out {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out.hide {
+  opacity: 0;
 }

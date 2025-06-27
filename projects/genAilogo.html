@@ -97,7 +97,7 @@
     }
   </style>
 </head>
-<body>
+<body class="fade-out">
   <div id="particles-js"></div>
 
   <section class="project-detail-card">
@@ -118,7 +118,7 @@
     <p><strong>Tech Stack:</strong> Python, FastAPI, Streamlit, Stable Diffusion, Hugging Face, PyTorch</p>
     <p><strong>Developed by:</strong> Ashutosh Swain (AshainX)</p>
 
-    <p><a href="https://github.com/AshainX/ai-logo-generator" target="_blank">🔗 View Project on GitHub</a></p>
+    <p><a href="https://github.com/AshainX/ai-logo-Designer" target="_blank">🔗 View Project on GitHub</a></p>
 
     <a class="back-btn" href="../index.html">← Back to Portfolio</a>
   </section>
@@ -126,5 +126,28 @@
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="../particle.js"></script>
   <script src="../script.js"></script>
+
+  <script>
+  // Fade-out navigation for internal links
+  document.querySelectorAll('a[href]').forEach(link => {
+    const isInternal = link.hostname === window.location.hostname && !link.target;
+    if (isInternal && !link.href.includes('#')) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        document.body.classList.add('hide');
+        setTimeout(() => {
+          window.location.href = href;
+        }, 400); // Match with CSS transition time
+      });
+    }
+  });
+
+  // On load, fade in
+  window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('hide');
+  });
+</script>
+
 </body>
 </html>
